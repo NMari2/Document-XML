@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="game"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="game">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="title"/>
+        <xs:element ref="sales"/>
+        <xs:element ref="realise"/>
+        <xs:element ref="devoloper"/>
+        <xs:element ref="publisher"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="sales" type="xs:NMTOKEN"/>
+  <xs:element name="realise" type="xs:string"/>
+  <xs:element name="devoloper" type="xs:string"/>
+  <xs:element name="publisher" type="xs:string"/>
+</xs:schema>

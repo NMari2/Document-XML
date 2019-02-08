@@ -1,0 +1,29 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT data (game)+>
+<!ATTLIST data
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT game (title,sales,realise,devoloper,publisher)>
+<!ATTLIST game
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT sales (#PCDATA)>
+<!ATTLIST sales
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT realise (#PCDATA)>
+<!ATTLIST realise
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT devoloper (#PCDATA)>
+<!ATTLIST devoloper
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT publisher (#PCDATA)>
+<!ATTLIST publisher
+  xmlns CDATA #FIXED ''>
